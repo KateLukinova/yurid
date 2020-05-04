@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+<!--    <link rel="shortcut icon" type="image/x-icon" sizes="256x256" href="favicon.png"/>-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная</title>
+  </head>
+<body>
+    <header class="container-fluid header-scroll">
+        <div class="header-top">
+            <a href="#" class="logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <nav>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navbar-collapse" id="menu-mobile">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Создать документ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Запустить бизнес</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Тарифы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bg" href="#" id="covid-link">
+                                Covid-19
+                                <img src="img/arrow-left.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item desktop-none">
+                            <a class="nav-link" href="#">Войти</a>
+                        </li>
+                        <li class="nav-item desktop-none">
+                            <a class="nav-link " href="#">Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="button-box">
+                <a class="nav-link" href="#">
+                    Войти
+                </a>
+                <a class="nav-link" href="#">
+                    Зарегистрироваться
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="main-page corona-block" id="corona-block">
+        <img src="img/corona.jpg" alt="" class="corona-img">
+        <div class="center-block">
+            <h2>Юридический центр</h2>
+            <div class="h1">Коронавирус</div>
+            <div class="tabs-block">
+                <!-- tabs -->
+                <ul class="nav nav-tabs nav-tabs-dropdown" role="tablist">
+                    <li role="presentation" class="button-service">
+                        <a href="#tab1" aria-controls="home" role="tab" data-toggle="tab" class="active">
+                            <img src="img/ic1.svg" alt="">
+                            Меры<br> поддержки
+                        </a>
+                    </li>
+                    <li role="presentation" class="button-service">
+                        <a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">
+                            <img src="img/ic2.svg" alt="">
+                            Полезные<br> документы
+                        </a>
+                    </li>
+                    <li role="presentation" class="button-service">
+                        <a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab">
+                            <img src="img/ic3.svg" alt="">
+                            Ограничения и<br>ответственность
+                        </a>
+                    </li>
+                    <li role="presentation" class="button-service">
+                        <a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab">
+                            <img src="img/ic4.svg" alt="">
+                            Новости
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                        <h3>Меры поддержки для твоего бизнеса</h3>
+                        <h4>Для получения ответа укажите данные ниже:</h4>
+                        <div class="input-box">
+                            <div class="name">
+                                <svg class="check-icon" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5.94118L6.52941 10.4706L15 2" stroke-width="3"/>
+                                </svg>
+                                Я:
+                            </div>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="radio1" name="radio-group1" class="btn-radio">
+                                <label for="radio1">Юр. лицо</label>
+
+                                <input type="radio" id="radio2" name="radio-group1" class="btn-radio" >
+                                <label for="radio2">Физ. лицо</label>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="name">
+                                <svg class="check-icon" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5.94118L6.52941 10.4706L15 2" stroke-width="3"/>
+                                </svg>
+                                Тип организации:
+                            </div>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="radio3" name="radio-group2" class="btn-radio">
+                                <label for="radio3">ИП</label>
+
+                                <input type="radio" id="radio4" name="radio-group2" class="btn-radio">
+                                <label for="radio4">ООО</label>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="name">
+                                <svg class="check-icon" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5.94118L6.52941 10.4706L15 2" stroke-width="3"/>
+                                </svg>
+                                Реестр МСП:
+                            </div>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="radio5" name="radio-group3" class="btn-radio">
+                                <label for="radio5">Включен</label>
+
+                                <input type="radio" id="radio6" name="radio-group3" class="btn-radio">
+                                <label for="radio6">Отсутствует</label>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="name">
+                                <svg class="check-icon" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5.94118L6.52941 10.4706L15 2" stroke-width="3"/>
+                                </svg>
+                                Деятельность:
+                            </div>
+                            <div class="radio-toolbar">
+                                <select class="btn-radio">
+                                    <option>Выберите</option>
+                                    <option>Pineapples</option>
+                                    <option>Chocklate</option>
+                                    <option>Pancakes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="name">
+                                <svg class="check-icon" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5.94118L6.52941 10.4706L15 2" stroke-width="3"/>
+                                </svg>
+                                Субъект РФ:
+                            </div>
+                            <div class="radio-toolbar">
+                                <select class="btn-radio">
+                                    <option>Выберите</option>
+                                    <option>Pineapples</option>
+                                    <option>Chocklate</option>
+                                    <option>Pancakes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-primary">посмотреть</a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab2">lorem...</div>
+                    <div role="tabpanel" class="tab-pane" id="tab3">ipsum...</div>
+                    <div role="tabpanel" class="tab-pane" id="tab4">dolor...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-page">
+        <img src="img/main.jpg" alt="">
+        <div class="center-block">
+            <h2>Юридический центр</h2>
+            <h1>Создавать документы — просто!</h1>
+            <div class="search-bar">
+                <p>Какой документ вам нужно создать?</p>
+                <div class="search-box">
+                    <input type="search" placeholder="Поиск документов" />
+                    <button type="submit" class="search-btn">
+                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7303 7.62004C12.7303 10.8593 10.1044 13.4852 6.86516 13.4852C3.62592 13.4852 1 10.8593 1 7.62004C1 4.3808 3.62592 1.75488 6.86516 1.75488C10.1044 1.75488 12.7303 4.3808 12.7303 7.62004ZM13.7303 7.62004C13.7303 11.4116 10.6567 14.4852 6.86516 14.4852C3.07363 14.4852 0 11.4116 0 7.62004C0 3.82852 3.07363 0.754883 6.86516 0.754883C10.6567 0.754883 13.7303 3.82852 13.7303 7.62004ZM12.396 14.3484L17.2997 19.2521L18.0068 18.545L13.1031 13.6413L12.396 14.3484Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <h2>Вся необходимая вам юридическая помощь</h2>
+        <div class="two-block">
+            <div class="two-block__item">
+                <div class="header">
+                    <h4>Для бизнеса</h4>
+                    <img src="img/people.svg" alt="">
+                </div>
+                <a class="collapse-btn"
+                   data-toggle="collapse"
+                   href="#multi-collapse1"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="multi-collapse1">
+                    Начать свой бизнес
+                </a>
+                <div class="collapse multi-collapse" id="multi-collapse1">
+                    <div class="card card-body collapse-card">
+                        <div class="head">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40px" height="40px">
+                                <path fill="#adadad" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path>
+                            </svg>
+                            <div class="text">
+                                <h3>Начать свой бизнес</h3>
+                                <h4>Экономьте время и деньги, чтобы вы могли сосредоточиться на развитии своего бизнеса.</h4>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <select>
+                                <option>Выберите страну</option>
+                                <option>Pineapples</option>
+                                <option>Chocklate</option>
+                                <option>Pancakes</option>
+                            </select>
+                            <select >
+                                <option>LLC</option>
+                                <option>Non-Profit</option>
+                                <option>C-Corp</option>
+                                <option>S-Sorp</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn-primary">Регистрация</a>
+                        <p>Узнайте больше о <a href="#">регистрации</a></p>
+                    </div>
+                </div>
+                <a class="collapse-btn"
+                   data-toggle="collapse"
+                   href="#multi-collapse2"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="multi-collapse2">
+                    Заключить свой договор
+                </a>
+                <div class="collapse multi-collapse" id="multi-collapse2">
+                    <div class="card card-body collapse-card">
+                        <div class="head">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40px" height="40px">
+                                <path fill="#adadad" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path>
+                            </svg>
+                            <div class="text">
+                                <h3>Начать свой бизнес</h3>
+                                <h4>Экономьте время и деньги, чтобы вы могли сосредоточиться на развитии своего бизнеса.</h4>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <select>
+                                <option>Выберите страну</option>
+                                <option>Pineapples</option>
+                                <option>Chocklate</option>
+                                <option>Pancakes</option>
+                            </select>
+                            <select >
+                                <option>LLC</option>
+                                <option>Non-Profit</option>
+                                <option>C-Corp</option>
+                                <option>S-Sorp</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn-primary">Регистрация</a>
+                        <p>Узнайте больше о <a href="#">регистрации</a></p>
+                    </div>
+                </div>
+                <a class="collapse-btn"
+                   data-toggle="collapse"
+                   href="#multi-collapse3"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="multi-collapse3">
+                    Начать свой бизнес
+                </a>
+                <div class="collapse multi-collapse" id="multi-collapse3">
+                    <div class="card card-body collapse-card">
+                        <div class="head">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40px" height="40px">
+                                <path fill="#adadad" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path>
+                            </svg>
+                            <div class="text">
+                                <h3>Начать свой бизнес</h3>
+                                <h4>Экономьте время и деньги, чтобы вы могли сосредоточиться на развитии своего бизнеса.</h4>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <select>
+                                <option>Выберите страну</option>
+                                <option>Pineapples</option>
+                                <option>Chocklate</option>
+                                <option>Pancakes</option>
+                            </select>
+                            <select >
+                                <option>LLC</option>
+                                <option>Non-Profit</option>
+                                <option>C-Corp</option>
+                                <option>S-Sorp</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn-primary">Регистрация</a>
+                        <p>Узнайте больше о <a href="#">регистрации</a></p>
+                    </div>
+                </div>
+                <a href="#" class="text-link">
+                    Посмотреть все направления  >
+                </a>
+            </div>
+            <div class="two-block__item gray">
+                <div class="header">
+                    <h4>Для частных лиц</h4>
+                    <img src="img/fd.svg" alt="">
+                </div>
+                <a class="collapse-btn"
+                   data-toggle="collapse"
+                   href="#multi-collapse4"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="multi-collapse4">
+                    Начать свой бизнес
+                </a>
+                <div class="collapse multi-collapse" id="multi-collapse4">
+                    <div class="card card-body collapse-card">
+                        <div class="head">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40px" height="40px">
+                                <path fill="#adadad" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path>
+                            </svg>
+                            <div class="text">
+                                <h3>Начать свой бизнес</h3>
+                                <h4>Экономьте время и деньги, чтобы вы могли сосредоточиться на развитии своего бизнеса.</h4>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <select>
+                                <option>Выберите страну</option>
+                                <option>Pineapples</option>
+                                <option>Chocklate</option>
+                                <option>Pancakes</option>
+                            </select>
+                            <select >
+                                <option>LLC</option>
+                                <option>Non-Profit</option>
+                                <option>C-Corp</option>
+                                <option>S-Sorp</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn-primary">Регистрация</a>
+                        <p>Узнайте больше о <a href="#">регистрации</a></p>
+                    </div>
+                </div>
+                <a class="collapse-btn"
+                   data-toggle="collapse"
+                   href="#multi-collapse5"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="multi-collapse5">
+                    Заключить свой договор
+                </a>
+                <div class="collapse multi-collapse" id="multi-collapse5">
+                    <div class="card card-body collapse-card">
+                        <div class="head">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40px" height="40px">
+                                <path fill="#adadad" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path>
+                            </svg>
+                            <div class="text">
+                                <h3>Начать свой бизнес</h3>
+                                <h4>Экономьте время и деньги, чтобы вы могли сосредоточиться на развитии своего бизнеса.</h4>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <select>
+                                <option>Выберите страну</option>
+                                <option>Pineapples</option>
+                                <option>Chocklate</option>
+                                <option>Pancakes</option>
+                            </select>
+                            <select >
+                                <option>LLC</option>
+                                <option>Non-Profit</option>
+                                <option>C-Corp</option>
+                                <option>S-Sorp</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn-primary">Регистрация</a>
+                        <p>Узнайте больше о <a href="#">регистрации</a></p>
+                    </div>
+                </div>
+                <a class="collapse-btn"
+                   data-toggle="collapse"
+                   href="#multi-collapse6"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="multi-collapse6">
+                    Начать свой бизнес
+                </a>
+                <div class="collapse multi-collapse" id="multi-collapse6">
+                    <div class="card card-body collapse-card">
+                        <div class="head">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40px" height="40px">
+                                <path fill="#adadad" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path>
+                            </svg>
+                            <div class="text">
+                                <h3>Начать свой бизнес</h3>
+                                <h4>Экономьте время и деньги, чтобы вы могли сосредоточиться на развитии своего бизнеса.</h4>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <select>
+                                <option>Выберите страну</option>
+                                <option>Pineapples</option>
+                                <option>Chocklate</option>
+                                <option>Pancakes</option>
+                            </select>
+                            <select >
+                                <option>LLC</option>
+                                <option>Non-Profit</option>
+                                <option>C-Corp</option>
+                                <option>S-Sorp</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn-primary">Регистрация</a>
+                        <p>Узнайте больше о <a href="#">регистрации</a></p>
+                    </div>
+                </div>
+                <div class="text-link">
+                    Посмотреть все направления  >
+                </div>
+            </div>
+        </div>
+
+        <div class="form-block">
+            <h3>Развивай свой бизнес</h3>
+            <h4>Мы облегчаем включение с пошаговым руководством:</h4>
+            <div class="input-box">
+                <select>
+                    <option>Выберите</option>
+                    <option>Pineapples</option>
+                    <option>Chocklate</option>
+                    <option>Pancakes</option>
+                </select>
+                <select >
+                    <option>Выберите</option>
+                    <option>Pineapples</option>
+                    <option>Chocklate</option>
+                    <option>Pancakes</option>
+                </select>
+            </div>
+            <a href="#" class="btn-primary big">начать</a>
+            <img src="img/img-b.png" alt="" class="img-b">
+        </div>
+        <div class="content-block">
+            <div class="left">
+                <h3>Легкие юридические документы</h3>
+                <h4>Сделать юридические документы для более чем сотни целей. Мы будем задавать вопросы для того, что бы создать документ, который будет соответствовать вашим потребностям</h4>
+                <div class="pr-item">
+                    <img src="img/pr1.png" alt="">
+                    <span>
+                    Защита и безопастность<br>ваших документов
+                </span>
+                </div>
+                <div class="pr-item">
+                    <img src="img/pr2.png" alt="">
+                    <span>
+                    Быстрый доступ к системе<br>возможность распечатать
+                </span>
+                </div>
+                <div class="pr-item">
+                    <img src="img/pr3.png" alt="">
+                    <span>
+                    Неограниченное колличество<br>изменений и копий
+                </span>
+                </div>
+                <a href="#" class="btn-primary">Создать юридический документ</a>
+            </div>
+            <div class="right">
+                <img src="img/tablet.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="faq-block">
+            <h3>Вопросы? Мы здесь, чтобы вам помочь.</h3>
+            <h4>Просмотрите FAQ, или напишите нам в чат, на почту или позвоните по телефону</h4>
+            <div class="left">
+                <div class="accordion" id="faq">
+                    <div class="card">
+                        <div class="card-header p-2" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Каковы вариации вступления в клуб?
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faq">
+                            <div class="card-body">
+                                <b>Answer:</b> It works using the Bootstrap 4 collapse component with cards to make a vertical accordion that expands and collapses as questions are toggled.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Все платежные запросы
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq">
+                            <div class="card-body">
+                                Bootstrap is the most popular CSS framework in the world. The latest version released in 2018 is Bootstrap 4. Bootstrap can be used to quickly build responsive websites.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Контракты и соглашения
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq">
+                            <div class="card-body">
+                                The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Я не могу вспомнить свой пароль
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faq">
+                            <div class="card-body">
+                                The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Как мне распечатать мои документы?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faq">
+                            <div class="card-body">
+                                The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <a href="tel:+79181234567" class="phone">+7 (918) 123-45-67</a>
+                    <a href="mailto:help@getlaw.ru" class="mail">help@getlaw.ru</a>
+                    <div class="btn-primary">Задать свой вопрос</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white">
+        <div class="menu-block">
+            <div class="menu-block__item">
+                <div class="menu-section">
+                    Юристам
+                </div>
+                <a href="#" class="menu-link">
+                    Дом
+                </a>
+                <a href="#" class="menu-link">
+                    Юридические документы и формы
+                </a>
+                <a href="#" class="menu-link">
+                    Центр юридической помощи
+                </a>
+                <a href="#" class="menu-link">
+                    Спроси юриста
+                </a>
+                <a href="#" class="menu-link">
+                    Инкорпорация
+                </a>
+                <a href="#" class="menu-link">
+                    Начать LLC
+                </a>
+                <a href="#" class="menu-link">
+                    Как это работает
+                </a>
+                <a href="#" class="menu-link">
+                    Для работодателей
+                </a>
+                <a href="#" class="menu-link">
+                    Ценообразование
+                </a>
+                <a href="#" class="menu-link">
+                    Мобильные приложения
+                </a>
+                <a href="#" class="menu-link last">
+                    Карта сайта
+                </a>
+            </div>
+            <div class="menu-block__item">
+                <div class="menu-section">
+                    Юридические ресурсы
+                </div>
+                <a href="#" class="menu-link">
+                    Справочник юриста
+                </a>
+                <a href="#" class="menu-link">
+                    Статьи юридической
+                </a>
+                <a href="#" class="menu-link">
+                    Юридический словарь
+                </a>
+                <a href="#" class="menu-link last">
+                    Ежедневный юридический блог
+                </a>
+                <div class="menu-section">
+                    Для адвокатов
+                </div>
+                <a href="#" class="menu-link last">
+                    Согласование с клиентом
+                </a>
+                <div class="menu-section">
+                    Для разработчиков
+                </div>
+                <a href="#" class="menu-link">
+                    API-интерфейсы
+                </a>
+            </div>
+            <div class="menu-block__item">
+                <div class="menu-section">
+                    Основные разделы
+                </div>
+                <a href="#" class="menu-link">
+                    О нас
+                </a>
+                <a href="#" class="menu-link">
+                    Карьера
+                </a>
+                <a href="#" class="menu-link">
+                    Связаться с нами
+                </a>
+                <a href="#" class="menu-link last">
+                    Партнер с нами
+                </a>
+                <div class="menu-section">
+                    Отдел новостей
+                </div>
+                <a href="#" class="menu-link last">
+                    Согласование с клиентом
+                </a>
+                <div class="menu-section">
+                    Для разработчиков
+                </div>
+                <a href="#" class="menu-link">
+                    API-интерфейсы
+                </a>
+            </div>
+            <div class="menu-block__item">
+                <div class="menu-section">
+                    Контакты
+                </div>
+                <div class="contacts">
+                    <a href="tel:+79181234567" class="phone">+7 (918) 123-45-67</a>
+                    <a href="mailto:help@getlaw.ru" class="mail">help@getlaw.ru</a>
+                    <div class="icon-box">
+                        <a href="#" class="soc">
+                            <img src="img/telegram.png" alt="">
+                        </a>
+                        <a href="#" class="soc">
+                            <img src="img/wp.png" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="btn-primary">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <span class="">
+                Все материалы, размещенные на сайте, являются интеллектуальной собственностью. Любое их использование без активной ссылки на getlaw.ru будет являться нарушением Российского законодательства.
+            </span>
+            <span class="cp">
+                © 2019 GetLAw
+            </span>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
