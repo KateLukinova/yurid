@@ -52,4 +52,8 @@ $( document ).ready(function() {
         $(this).parent().removeClass('active');
     })
 
+    $('.document-item .top-link').on('click', function() {
+        $(this).parent().toggleClass('show');
+    });
+
 });
