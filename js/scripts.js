@@ -55,15 +55,21 @@ $( document ).ready(function() {
     var isAccordionOpened = false;
 
     $('.document-item .top-link').on('click', function() {
+        var isClickedOpened = false;
+        if ($(this).parent().hasClass('show')) {
+            isClickedOpened = true;
+        }
 
-        if (isAccordionOpened) {
+        $('.document-item .top-link').siblings().slideUp().parent().removeClass('show');
+
+        // if (isAccordionOpened) {
+        if (isClickedOpened) {
             $(this).siblings().slideUp().parent().removeClass('show')
         } else {
             $(this).siblings().slideDown().parent().addClass('show')
         }
 
-        isAccordionOpened = !isAccordionOpened;
-
+        isAccordionOpened = ! isAccordionOpened;
     });
 
     $('.blank-file-box.carousel').slick({
@@ -229,5 +235,180 @@ $( document ).ready(function() {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
+
+    var isReestrMSP = false;
+    var isMostInjured = false;
+    var spheres = [];
+
+    $('#radio-reestr').on('click', function() {
+        isReestrMSP = true
+    });
+
+    $('#radio-reestr-no').on('click', function() {
+        isReestrMSP = false
+    });
+
+    $('#radio-otr').on('click', function() {
+        isMostInjured = true
+    });
+
+    $('#radio-otr-no').on('click', function() {
+        isMostInjured = false
+    });
+
+    $('#check-auto').on('click', function() {
+        console.log(spheres)
+        if ($(this).prop("checked")) {
+            spheres.push('auto');
+        } else {
+            const index = spheres.indexOf('auto');
+
+            if (index > -1) {
+                spheres.splice(index, 1);
+            }
+        }
+        console.log(spheres)
+    })
+
+    $('#check-it').on('click', function() {
+        if ($(this).prop("checked")) {
+            spheres.push('it');
+        } else {
+            const index = spheres.indexOf('it');
+
+            if (index > -1) {
+                spheres.splice(index, 1);
+            }
+        }
+    })
+
+    $('#check-import').on('click', function() {
+        if ($(this).prop("checked")) {
+            spheres.push('import');
+        } else {
+            const index = spheres.indexOf('import');
+
+            if (index > -1) {
+                spheres.splice(index, 1);
+            }
+        }
+    })
+
+    $('#check-med').on('click', function() {
+        if ($(this).prop("checked")) {
+            spheres.push('med');
+        } else {
+            const index = spheres.indexOf('med');
+
+            if (index > -1) {
+                spheres.splice(index, 1);
+            }
+        }
+    })
+
+    $('#check-pro-med').on('click', function() {
+        if ($(this).prop("checked")) {
+            spheres.push('pro-med');
+        } else {
+            const index = spheres.indexOf('pro-med');
+
+            if (index > -1) {
+                spheres.splice(index, 1);
+            }
+        }
+    })
+
+    $('#check-trans').on('click', function() {
+        if ($(this).prop("checked")) {
+            spheres.push('trans');
+        } else {
+            const index = spheres.indexOf('trans');
+
+            if (index > -1) {
+                spheres.splice(index, 1);
+            }
+        }
+    })
+
+    $('#check-avia').on('click', function() {
+        if ($(this).prop("checked")) {
+            spheres.push('avia');
+        } else {
+            const index = spheres.indexOf('avia');
+
+            if (index > -1) {
+                spheres.splice(index, 1);
+            }
+        }
+    })
+
+    $('#check-fin').on('click', function() {
+        if ($(this).prop("checked")) {
+            spheres.push('fin');
+        } else {
+            const index = spheres.indexOf('fin');
+
+            if (index > -1) {
+                spheres.splice(index, 1);
+            }
+        }
+    })
+
+    $('#check-none').on('click', function() {
+        if ($(this).prop("checked")) {
+            spheres.push('none');
+        } else {
+            const index = spheres.indexOf('none');
+
+            if (index > -1) {
+                spheres.splice(index, 1);
+            }
+        }
+    })
+
+    $('#filter-document-items').on('click', function() {
+
+        $('.document-item').css('display', 'flex')
+
+        if (!isReestrMSP) {
+            $('.document-item.no-msp').css('display', 'none')
+        }
+
+        if (!isMostInjured) {
+            $('.document-item.no-injured').css('display', 'none')
+        }
+
+        if (!spheres.includes('auto')) {
+            $('.document-item.is-auto').css('display', 'none')
+        }
+
+        if (!spheres.includes('it')) {
+            $('.document-item.is-it').css('display', 'none')
+        }
+
+        if (!spheres.includes('import')) {
+            $('.document-item.is-import').css('display', 'none')
+        }
+
+        if (!spheres.includes('pro-med')) {
+            $('.document-item.is-pro-med').css('display', 'none')
+        }
+
+        if (!spheres.includes('med')) {
+            $('.document-item.is-med').css('display', 'none')
+        }
+
+        if (!spheres.includes('trans')) {
+            $('.document-item.is-trans').css('display', 'none')
+        }
+
+        if (!spheres.includes('avia')) {
+            $('.document-item.is-avia').css('display', 'none')
+        }
+
+        if (!spheres.includes('fin')) {
+            $('.document-item.is-fin').css('display', 'none')
+        }
+    })
 
 });
