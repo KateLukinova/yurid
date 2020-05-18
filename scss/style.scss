@@ -703,7 +703,7 @@ select {
     .two-block__item {
         background-color: #D78021;
         border-radius: 8px;
-        width: 48%;
+        width: 100%;
         padding: 50px;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -740,7 +740,7 @@ select {
                 z-index: 0;
             }
         }
-        &:after {
+        &:before {
             content: '';
             position: absolute;
             left: 0;
@@ -753,6 +753,23 @@ select {
             background: -o-linear-gradient(bottom, #D68020 0%, rgba(214, 128, 32, 0) 100%);
             background: -webkit-gradient(linear, left bottom, left top, from(#D68020), to(rgba(214, 128, 32, 0)));
             background: linear-gradient(0deg, #D68020 0%, rgba(214, 128, 32, 0) 100%);
+            opacity: 0.2;
+            z-index: 0;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: 50%;
+            width: 317px;
+            height: 262px;
+            -webkit-transform: translate(90%, -50%) rotate(-90deg);
+            -ms-transform: translate(90%, -50%) rotate(-90deg);
+            transform: translate(90%, -50%) rotate(-90deg);
+            background: -webkit-gradient(linear, left bottom, left top, from(rgba(214, 128, 32, 0)), to(#D68020));
+            background: -o-linear-gradient(bottom, rgba(214, 128, 32, 0) 0%, #D68020 100%);
+            background: linear-gradient(0deg, rgba(214, 128, 32, 0) 0%, #D68020 100%);
             opacity: 0.2;
             z-index: 0;
         }
@@ -1292,7 +1309,7 @@ a.soc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #C6CACC;
+    color: #828384;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -1497,7 +1514,7 @@ a.soc {
         flex-direction: column;
         width: 100%;
         background: #FFFFFF;
-        border: 1px solid #E5E8ED;
+        border: 1px solid #D78021;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         border-radius: 4px;
@@ -2036,9 +2053,9 @@ a.soc {
     margin-bottom: 0;
     display: none;
     cursor: pointer;
-        -webkit-appearance: none;
-        -moz-appearance:    none;
-        appearance:         none;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
 }
 
 .form-checkbox label {
@@ -2866,5 +2883,20 @@ a.soc {
     }
     .collapse-info-item {
         margin-top: 20px;
+    }
+    .people-support .people-support-item {
+        min-width: 140px;
+        height: 130px;
+        img {
+            width: 70px;
+        }
+        .card-name {
+            font-size: 14px;
+            line-height: 16px;
+            padding: 10px;
+        }
+    }
+    .people-support {
+        width: 100%;
     }
 }
